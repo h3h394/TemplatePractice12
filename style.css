@@ -1,0 +1,525 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+}
+
+.btn {
+    background: #e84545;
+    padding: 15px 30px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: .4s ease-in-out;
+}
+
+nav {
+    width: 100%;
+    padding: 40px 0;
+    position: absolute;
+    top: 0;
+}
+
+nav .container {
+    margin: 0 auto;
+    padding: 0 0 28px 0;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .list a {
+    margin: 0 15px;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .3s;
+}
+
+nav .list a:hover {
+    color: #fff;
+}
+
+#burger {
+    color: #fff;
+    font-size: 20px;
+    display: none;
+}
+
+.main {
+    width: 100%;
+    padding: 260px 0;
+    background: url('img/banner.jpg') no-repeat;
+    background-size: cover;
+}
+
+.main .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main h5 {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+}
+
+.main .btn {
+    margin: 80px 0 0 0;
+}
+
+.main .bnt:hover {
+    background: #e52e2e;
+}
+
+.offers {
+    width: 100%;
+    padding: 60px 0 90px 0;
+}
+
+.offers .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.offers .box {
+    width: 350px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.offers .box i {
+    color: #e52e2e;
+    font-size: 70px;
+}
+
+.offers .box h3 {
+    margin: 24px 0 4px 0;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.offers .box p {
+    color: #6c7279;
+    font-size: 14px;
+}
+
+.gallery {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.gallery .container {
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery .gallery-card {
+    width: 100%;
+    max-width: 25%;
+    height: 350px;
+    border: 1px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .gallery-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.gallery .gallery-card:hover .gallery-text {
+    display: inline-block;
+}
+
+.gallery .gallery-card:hover .overlay {
+    opacity: .8;
+}
+
+.gallery .gallery-card:hover img {
+    transform: scale(1.1);
+    transition: .4s ease-in-out;
+}
+
+.gallery .gallery-card h5 {
+    margin: 0;
+    color: #fff;
+}
+
+.gallery .gallery-card p {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.gallery .gallery-text {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    display: none;
+    z-index: 3;
+}
+
+.gallery .overlay {
+    background: rgba(232, 69, 69, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: .3s;
+    z-index: 2;
+}
+
+.our-team {
+    width: 100%;
+    padding: 100px 0;
+}
+
+.our-team .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-team .team-card {
+    width: 100%;
+    max-width: 270px;
+}
+
+.our-team .team-pic img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.our-team .team-desc h4 {
+    margin: 10px 0 6px 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.our-team .team-desc h5 {
+    margin: 8px 0;
+    color: #e84545;
+    font-weight: 600;
+}
+
+.our-team .team-desc p {
+    margin: 20px 0;
+    color: #6c7279;
+    font-size: 14px;
+}
+
+.our-team .team-socials i {
+    padding: 10px;
+    color: #c6cacc;
+    border: 0.5px solid #e8ecee;
+    transition: .3s ease-in-out;
+}
+
+.our-team .team-socials i:hover {
+    background: #e52e2e;
+    color: #fff;
+}
+
+.testimonials .container {
+    max-width: 100%;
+    display: flex;
+}
+
+.testimonials .left-card, .testimonials .right-card {
+    width: 100%;
+    max-width: 50%;
+    height: 470px;
+}
+
+.testimonials .left-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.testimonials .right-card {
+    background: #53354a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials .right-card .right-card-text {
+    width: 100%;
+    max-width: 500px;
+}
+
+.testimonials .right-card p {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.testimonials .right-card .right-card-text p:nth-child(2) {
+    margin: 40px 0 0 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.download {
+    width: 100%;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.download .container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download h3 {
+    margin: 12px 0;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.download p {
+    margin: 0;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.download .btn {
+    margin: 40px 0 0 0;
+    background: #e84545;
+}
+
+.download .btn:hover {
+    background: #e52e2e;
+}
+
+.contact {
+    width: 100%;
+    padding: 30px 0 70px 0;
+    background: #3a3e64;
+    text-align: center;
+}
+
+.contact .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .contact-box {
+    width: 100%;
+    max-width: 300px;
+}
+
+.contact .contact-box h5 {
+    color: #fff;
+    font-weight: 700;
+}
+
+.contact .contact-box p {
+    margin: 0;
+    color: #6c7279;
+}
+
+.contact .contact-box i {
+    margin: 0 5px;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: .4s ease-in-out;
+}
+
+.contact .contact-box i:hover {
+    background: #e52e2e;
+    color: #fff;
+    border: none;
+}
+
+footer {
+    width: 100%;
+    padding: 20px 0 40px 0;
+    background: #313454;
+    text-align: center;
+}
+
+footer p {
+    margin: 4px 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+footer a:hover {
+    color: #e52e2e;
+}
+
+@media (max-width: 550px) {
+    nav .list {
+        margin: 17px 0 0 0;
+    }
+    .main .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 690px) {
+    .gallery .gallery-card {
+        max-width: 100%;
+        margin: 20px 0;
+        border: none;
+    }
+}
+
+@media (min-width: 691px) and (max-width: 1300px) {
+    .gallery .gallery-card {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 950px) {
+    #burger {
+        display: block;
+        margin: 0 10px;
+    }
+    nav .container {
+        justify-content: flex-end;
+    }
+    nav .list.show, nav .logo {
+        display: none;
+    }
+    .main h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .main br {
+        display: none;
+    }
+    .our-team .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .our-team .team-card {
+        margin: 20px 0;
+    }
+    .contact .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .contact-box {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 875px) {
+    .testimonials .container {
+        flex-direction: column;
+    }
+    .testimonials .left-card, .testimonials .right-card {
+        max-width: 100%;
+    }
+    .testimonials .right-card .right-card-text {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 876px) and (max-width: 1222px) {
+    .testimonials .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials .left-card, .testimonials .right-card {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 951px) and (max-width: 1250px) {
+    .our-team .team-card {
+        max-width: 40%;
+        margin: 20px 0;
+    }
+    .our-team .container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 951px) and (max-width: 1366px) {
+    nav .container {
+        max-width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1360px) {
+    nav .list {
+        text-align: center;
+    }
+    nav .list a {
+        margin: 9px 5px;
+        font-weight: 600;
+    }
+}
